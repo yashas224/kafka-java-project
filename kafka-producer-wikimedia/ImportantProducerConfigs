@@ -1,0 +1,11 @@
+acks
+min.insync.replicas
+retries
+retry.backoff.ms
+max.block.ms
+linger.ms
+batch.size
+request.timeout.ms
+delivery.timeout.ms
+max.in.flight.requests.per.connection
+buffer.memory

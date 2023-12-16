@@ -1,0 +1,39 @@
+{
+  "$schema": "/mediawiki/recentchange/1.0.0",
+  "meta": {
+    "uri": "https://www.wikidata.org/wiki/Q74346097",
+    "request_id": "f08b630b-b636-434a-98e1-faff3d319436",
+    "id": "6cc03377-77f5-4190-9fad-8e4d47ef3216",
+    "dt": "2023-09-02T19:07:07Z",
+    "domain": "www.wikidata.org",
+    "stream": "mediawiki.recentchange",
+    "topic": "eqiad.mediawiki.recentchange",
+    "partition": 0,
+    "offset": 4912244134
+  },
+  "id": 2026849335,
+  "type": "edit",
+  "namespace": 0,
+  "title": "Q74346097",
+  "title_url": "https://www.wikidata.org/wiki/Q74346097",
+  "comment": "/* wbeditentity-update:0| */ Added [[Property:P921]]: [[Q181257]] with [[Wikidata:Tools/ItemSubjector]] ([[:toolforge:editgroups/b/CB/725c99010944|details]])",
+  "timestamp": 1693681627,
+  "user": "Jsamwrites",
+  "bot": false,
+  "notify_url": "https://www.wikidata.org/w/index.php?diff=1966830482&oldid=1772567757&rcid=2026849335",
+  "minor": false,
+  "patrolled": true,
+  "length": {
+    "old": 78053,
+    "new": 78933
+  },
+  "revision": {
+    "old": 1772567757,
+    "new": 1966830482
+  },
+  "server_url": "https://www.wikidata.org",
+  "server_name": "www.wikidata.org",
+  "server_script_path": "/w",
+  "wiki": "wikidatawiki",
+  "parsedcomment": "‎<span dir=\"auto\"><span class=\"autocomment\">Updated Item: </span></span> Added <a href=\"/wiki/Property:P921\" title=\"‎main subject‎ | ‎primary topic of a work (see also P180: depicts)‎\"><span class=\"wb-itemlink\"><span class=\"wb-itemlink-label\" lang=\"en\" dir=\"ltr\">main subject</span> <span class=\"wb-itemlink-id\">(P921)</span></span></a>: <a href=\"/wiki/Q181257\" title=\"‎prostate cancer‎ | ‎male reproductive organ cancer‎\"><span class=\"wb-itemlink\"><span class=\"wb-itemlink-label\" lang=\"en\" dir=\"ltr\">prostate cancer</span> <span class=\"wb-itemlink-id\">(Q181257)</span></span></a> with <a href=\"/wiki/Wikidata:Tools/ItemSubjector\" title=\"Wikidata:Tools/ItemSubjector\">Wikidata:Tools/ItemSubjector</a> (<a href=\"https://iw.toolforge.org/editgroups/b/CB/725c99010944\" class=\"extiw\" title=\"toolforge:editgroups/b/CB/725c99010944\">details</a>)"
+}

@@ -1,0 +1,115 @@
+----------// when index doesn't exists
+
+[main] INFO OpenSearchConsumer - Index  wikimedia : exists: false
+[main] INFO OpenSearchConsumer - Index creation for wikimedia : status: true
+[main] INFO org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values:
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-null-1
+
+Process finished with exit code 0
+
+
+----------// when index exists
+[main] INFO OpenSearchConsumer - Index  wikimedia : exists: true
+[main] INFO org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values:
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+
+Process finished with exit code 0
+
+
+
+// when isBulkRequest is false
+
+[main] INFO org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values:
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-consumer-opensearch-1
+	client.rack =
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+.
+.
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.1.0
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 37edeed0777bacb3
+[main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693754353385
+[main] INFO OpenSearchConsumer - Index  wikimedia : exists: true
+[main] INFO org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Subscribed to topic(s): mediawiki.recentchange
+[main] INFO org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Resetting the last seen epoch of partition mediawiki.recentchange-0 to 0 since the associated topicId changed from null to JGihxUc7Qmigte5G16gaoQ
+[main] INFO org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Resetting the last seen epoch of partition mediawiki.recentchange-1 to 0 since the associated topicId changed from null to JGihxUc7Qmigte5G16gaoQ
+[main] INFO org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Resetting the last seen epoch of partition mediawiki.recentchange-2 to 0 since the associated topicId changed from null to JGihxUc7Qmigte5G16gaoQ
+[main] INFO org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Cluster ID: EIaiEOqFSKupnant_ALyag
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Discovered group coordinator 127.0.0.1:9092 (id: 2147483646 rack: null)
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] (Re-)joining group
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Request joining group due to: need to re-join with the given member-id
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] (Re-)joining group
+
+.
+.
+
+[main] INFO OpenSearchConsumer - received record count 0
+[main] INFO OpenSearchConsumer - offset have been committed for the batch
+[main] INFO OpenSearchConsumer - received record count 0
+[main] INFO OpenSearchConsumer - offset have been committed for the batch
+.
+.
+
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Successfully joined group with generation Generation{generationId=39, memberId='consumer-consumer-opensearch-1-585849e7-0d6e-44fe-aef4-d090f8dc7758', protocol='range'}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Finished assignment for group at generation 39: {consumer-consumer-opensearch-1-585849e7-0d6e-44fe-aef4-d090f8dc7758=Assignment(partitions=[mediawiki.recentchange-0, mediawiki.recentchange-1, mediawiki.recentchange-2])}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Successfully synced group in generation Generation{generationId=39, memberId='consumer-consumer-opensearch-1-585849e7-0d6e-44fe-aef4-d090f8dc7758', protocol='range'}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Notifying assignor about the new Assignment(partitions=[mediawiki.recentchange-0, mediawiki.recentchange-1, mediawiki.recentchange-2])
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Adding newly assigned partitions: mediawiki.recentchange-2, mediawiki.recentchange-1, mediawiki.recentchange-0
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Setting offset for partition mediawiki.recentchange-2 to the committed offset FetchPosition{offset=2146, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Setting offset for partition mediawiki.recentchange-1 to the committed offset FetchPosition{offset=1354, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+[main] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-1, groupId=consumer-opensearch] Setting offset for partition mediawiki.recentchange-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9092 (id: 1 rack: null)], epoch=0}}
+.
+.
+
+[main] INFO OpenSearchConsumer - received record count 500
+[main] INFO OpenSearchConsumer - inserted document id 39ed9449-edaa-47cc-8129-71f3b3dfd1db ,  status : CREATED into openSearch
+[main] INFO OpenSearchConsumer - inserted document id 77d51e52-e682-400a-a53e-bfc5e5284967 ,  status : CREATED into openSearch
+[main] INFO OpenSearchConsumer - inserted document id e6f52402-2117-498b-952a-32f7702c6373 ,  status : OK into openSearch
+.
+.
+[main] INFO OpenSearchConsumer - offset have been committed for the batch
+.
+.
+
+
+
+// when isBulkRequest is true
+
+kafka consumer related logs same as above
+.
+.
+[main] INFO OpenSearchConsumer - received record count 500
+[main] INFO OpenSearchConsumer - inserted 499 documents using bulk API ,  status : OK into openSearch
+[main] INFO OpenSearchConsumer - offset have been committed for the batch
+[main] INFO OpenSearchConsumer - received record count 500
+[main] INFO OpenSearchConsumer - inserted 500 documents using bulk API ,  status : OK into openSearch
+[main] INFO OpenSearchConsumer - offset have been committed for the batch
+[main] INFO OpenSearchConsumer - received record count 500
+[main] INFO OpenSearchConsumer - inserted 499 documents using bulk API ,  status : OK into openSearch
+[main] INFO OpenSearchConsumer - offset have been committed for the batch
+[main] INFO OpenSearchConsumer - received record count 500
+[main] INFO OpenSearchConsumer - inserted 500 documents using bulk API ,  status : OK into openSearch
+[main] INFO OpenSearchConsumer - offset have been committed for the batch
+[main] INFO OpenSearchConsumer - received record count 500
+[main] INFO OpenSearchConsumer - inserted 500 documents using bulk API ,  status : OK into openSearch
+[main] INFO OpenSearchConsumer - offset have been committed for the batch
+[main] INFO OpenSearchConsumer - received record count 500
+[main] INFO OpenSearchConsumer - inserted 500 documents using bulk API ,  status : OK into openSearch
+[main] INFO OpenSearchConsumer - offset have been committed for the batch
+
+

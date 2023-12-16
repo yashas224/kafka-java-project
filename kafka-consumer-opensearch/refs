@@ -1,0 +1,28 @@
+https://github.com/conduktor/kafka-beginners-course
+
+// open-search refs
+https://opensearch.org/docs/1.2/
+https://opensearch.org/docs/1.2/opensearch/index-data/
+// index check
+https://opensearch.org/docs/1.2/opensearch/rest-api/index-apis/exists/
+
+//Java high-level REST client for openSearch
+https://opensearch.org/docs/1.2/clients/java-rest-high-level/
+
+// REST API refs
+https://opensearch.org/docs/1.2/opensearch/rest-api/index/
+
+// kafka refs
+https://kafka.apache.org/documentation/#consumerapi
+https://www.conduktor.io/kafka/complete-kafka-consumer-with-java/
+
+
+// consumer configs
+offsets.retention.minutes
+
+heartbeat.interval.ms
+max.poll.interval.ms
+max.poll.records
+fetch.min.bytes
+fetch.max.wait.ms
+fetch.max.bytes

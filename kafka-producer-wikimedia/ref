@@ -1,0 +1,17 @@
+https://github.com/conduktor/kafka-beginners-course
+
+//SSE source
+https://stream.wikimedia.org/v2/stream/recentchange
+
+//consuming SSE events
+https://github.com/launchdarkly/okhttp-eventsource
+
+// setting up docker compose file for running kafka locally
+https://github.com/conduktor/kafka-beginners-course/tree/main/conduktor-platform
+
+
+https://kafka.apache.org/documentation/
+
+//idempotent-producer
+https://www.linkedin.com/pulse/kafka-idempotent-producer-rob-golder
+https://levelup.gitconnected.com/idempotent-producer-in-kafka-6b53e7394831#:~:text=An%20idempotent%20producer%20in%20Apache%20Kafka%20is%20a%20producer%20configuration,broker%20in%20an%20idempotent%20manner.
